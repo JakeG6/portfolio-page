@@ -1,11 +1,16 @@
+.link {
+	/* box-sizing: border-box; */
+	height: 100px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.link, p, h3 {
-	font-family: Source Sans Pro, Sans Serif;
+.link, h3 {
+	font-family: 'Arvo', serif;
 }
 
 .about-me, .contact-container p,  
@@ -28,6 +33,20 @@ body {
 	font-weight: 300;
 	
 }
+
+.nav-buttons li .link:hover {
+	/* /* border-bottom: 5px; */
+	
+	/* color: black;  */
+	
+}
+
+.link p:hover {
+	color: black;
+	border-bottom: 10px solid black;
+	
+}
+
 
 
 
@@ -77,14 +96,14 @@ header {
 	font-weight: 300;
 	text-align: center;
 	padding: .5em  .5em 0 .5em;
-	background-color: #FFA500;
-	
+	/* background-color: #FFA500; */
+	box-sizing: border-box;
 }
 
-.nav-buttons li .link:hover {
+/* li .link:hover {
 	border-bottom: 5px;
 	border-bottom-color: blue;
-}
+} */
 
 .nav-buttons li {
 	list-style: none;
@@ -504,7 +523,7 @@ body {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1060px) {
 
 
 	#name-png-header{
@@ -545,13 +564,11 @@ body {
 	}
 		.nav-buttons li {
 		padding-left: 25px;
-		padding-right: 25px;
-		margin-right: 1em;
+		
+		margin-right: 20px;
 		margin-bottom: -1em;
 		
 	}
-
-
 
 	.about-me {
 		font-size: 1.75em;

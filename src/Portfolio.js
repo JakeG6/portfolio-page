@@ -10,17 +10,17 @@ class Portfolio extends Component {
                 {
                     image:"Images/portfolio-1.png",
                     title:"Calculator",
-                    description: "Use this interactive calculator to perform mathematical techniques."
+                    description: "Use this interactive calculator to perform mathematical techniques like addition, subtraction, multiplication, and division."
                 },
                 {
                     image:"Images/portfolio-2.png",
                     title:"Quote Machine",
-                    description: "Press the button and receive a random quote delivered fresh from an API!"
+                    description: "Press the button and receive a random inspirational or memorable quote delivered fresh from an API!"
                 },
                 {
                     image:"Images/portfolio-3.png",
-                    title:"Travel App",
-                    description: "This project compares travel times based on different transportation methods and tells you the best one."
+                    title:"Deckster",
+                    description: "This project allows users to search up Magic: The Gathering cards from the game's 25 year history, create decks, and save them to a back-end database using their Facebook account."
                 }
                 
             ],
