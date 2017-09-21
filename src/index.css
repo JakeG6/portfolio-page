@@ -1,0 +1,581 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.link, p, h3 {
+	font-family: Source Sans Pro, Sans Serif;
+}
+
+.about-me, .contact-container p,  
+.page-description, .skill-description, 
+.contact-text, .footer-name {
+	font-size: 1.1em;
+}
+
+.nav .link {
+	font-size: 2em;
+}
+
+.footer-nav .link {
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+.nav-buttons li .link {
+	font-size: 1.5em;
+	font-weight: 300;
+	
+}
+
+
+
+/*HEADER LAYOUT*/
+
+#name {
+	width:100%;
+	text-align: center;
+	display: none;
+}
+
+header {
+	padding: .25em 0;
+	margin: 0 auto 2em auto;
+	
+	background-color: orange;
+}
+
+.main-logo {
+	margin-left:auto;
+	margin-right: auto;
+	
+}
+
+#name-png {
+	margin-left:auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.main-header, .nav-buttons{
+		display:flex;
+		flex-direction: column;
+	}
+
+.nav-buttons {
+	margin:  0 auto;
+	padding-left: 0;
+	max-width: 75%;
+}
+
+.nav-buttons  .link {
+	display:block;
+	margin: 0 auto;
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .5em  .5em 0 .5em;
+	background-color: #FFA500;
+	
+}
+
+.nav-buttons li .link:hover {
+	border-bottom: 5px;
+	border-bottom-color: blue;
+}
+
+.nav-buttons li {
+	list-style: none;
+}
+
+/*PROFILE LAYOUT*/
+
+.profile {
+	text-align: center;
+	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	
+}
+
+.profile-picture{
+  	padding-top: 1em;
+  	padding-bottom: 1em;
+    height: 250px;
+    width: 250px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.about-me{
+	font-style: italic;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width:80%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/*PORTFOLIO LAYOUT*/
+
+#portfolio-png {
+	width:50%;
+	margin: 2em 25% 1em 25%;
+}
+
+h2{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	display: none;
+}
+
+#portfolio {
+	display: flex;
+	flex-direction:column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+
+}
+
+.title {
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 0;
+}
+
+.portfolio-img {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+	padding-top: 1em;
+	box-shadow: inset 0px 0px 0px rgba(0,0,0,0.8);
+	z-index: -2;
+}
+
+.page-description {
+	margin:.5em auto 2em auto;
+	width: 80%;
+}
+
+/*SKILLS LAYOUT*/
+
+#skills-png {
+	width: 50%;
+	margin: 2em 25% 1em 25%;
+}
+
+#skills {
+	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	margin: 0 auto;
+}
+
+.skill-description-box {
+	margin: 0 auto -1em auto;
+	padding-top: .5em;
+	text-align: center;
+}
+
+#skills h3{
+	text-align: center;
+	margin-top: 0;
+}
+
+.skill-description {
+	font-style: italic;
+}
+
+.skill-list {
+	font-size: 2em;
+	width:40%;
+	margin-left: 30%;
+	margin-right:30%;
+	padding-bottom: .05em;
+}
+
+.skills-container {
+	display: none;
+}
+		
+
+/*CONTACT LAYOUT*/
+.contact {
+	padding-top: .1em;
+	padding-bottom: 1em;
+	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+}
+
+.contact-container {
+	display: none;
+}
+
+#contact-png {
+	width:50%;
+	margin: 2em 25% 1em 25%;
+}
+
+.contact-title {
+	margin-top: 1em;
+}
+
+.mobile-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 3em auto;
+}
+
+.phone-button a, .email-button a {
+	text-decoration: none;
+	padding: 1em .5em;
+	margin: 2em 2em 2em 2em;
+	color: seashell;
+	font-size: 1.125em;
+	font-weight: 300;
+	border: solid seashell 1px;
+	border-radius: 10px
+	}
+	
+.mobile-buttons a:hover {
+	color:#79CC32;
+	background-color: seashell;
+	border-color:#79CC32;
+}
+
+.mobile-buttons a:active {
+	color:#79CC32;
+	background-color: seashell;
+	border-color:#79CC32;
+}
+
+.phone-info, .email-info {
+ 	display: none;
+ 	text-align: center;
+}
+
+.contact-text {
+	padding-left: 10%;
+	padding-right:10%;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-style: italic;
+}
+
+/*FOOTER LAYOUT*/
+
+.footer-nav {
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
+	align-items:center;
+}
+
+.footer-item {
+	display: none;
+}
+
+.footer-name {
+	margin-right: auto;
+}
+
+.footer-nav a {
+	margin-left: .5em;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.footer-nav a:hover {
+	font-weight: 600;
+}
+
+/*COLOR*/
+
+p, a, .link, li, h3 {
+	color:seashell;
+}
+
+body {
+	min-height: 100vh;
+	background: linear-gradient( 180deg, white, #AFEEEE);
+}
+
+ .main-header, .profile, .item, .skills-container, .profile, #skills, .contact {
+	background-color: #FFA500;
+}
+
+.footer-nav a, .footer-nav p {
+	color: black;
+}
+
+#name-png-header{
+  width: 100%;
+  
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 768px) {
+	
+	.main-header, .nav-buttons{
+		display:flex;
+		flex-direction: column;
+	}
+	
+	.main-header {
+		justify-content: flex-end;
+
+	}
+
+	.nav-buttons {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+
+	/*RESPONSIVE PROFILE*/
+	
+	.profile {
+		display:flex;
+		flex-direction: row-reverse;
+		max-width: 95%;
+		margin-left: auto;
+		margin-right: auto; 
+		-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+		box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+		border-radius: 5px;
+	}
+	
+	.profile-picture {
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 1em;
+	}
+
+	.about-me {
+		font-style: italic;
+		display: block;
+		font-size: 1.5em;
+		text-align: left;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	/*RESPONSIVE PORTFOLIO */
+
+	#portfolio-png {
+	width:30%;
+	margin: 2em 35% 1em 35%;
+	}
+
+	#portfolio {
+		flex-direction: row;
+		width: 95%;
+		border-radius: 5px;
+	}
+
+	.item {
+		max-width: calc(50% - 2em);
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#skills {
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 95%;
+	border-radius: 5px;
+	}
+
+	#skills-png {
+		 width: 30%;
+   		margin: 2em 35% 1em 35%;
+	}
+	
+	.skill-list {
+		display: none;
+	}
+
+	/*SKILLS FLEX CONTAINER*/
+
+	.skills-container {
+	display: flex;
+	flex-direction:row;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	}	
+	
+	.skill-item {
+		max-width: calc(20% - 1em);
+		margin: 1em;
+	}
+	
+	.skill-item p {
+		text-align: center;
+		margin-top: .5em;
+	}
+
+	.skill-svg {
+	width:100%;
+	}
+	
+	#contact-png {
+		width:30%;
+		margin: 2em 35% 1em 35%;
+	}
+
+	/*RESPONSIVE FOOTER*/
+
+	.contact {
+		max-width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 5px;
+		-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+		box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	}
+	
+	.mobile-buttons {
+		display: none;
+	}
+
+	.contact-container {
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 300px;
+		height: 50px;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.contact-item {
+		margin-right: 1em;
+	}
+
+	.phone, .email-me {
+		margin: .5em;
+	}
+
+	.phone-number, .email-address {
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.footer-item {
+		display: inline;
+	}
+
+	.to-top {
+		display: none;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+
+	#name-png-header{
+		width: 20em;
+	    height: 4em;
+	   
+		padding-top: 17px;
+		margin-left: 1em;
+	    margin-right: auto;
+	}
+	
+		.wrapper {
+		max-width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+		.main-logo {
+			padding-top: 0;
+			display: flex;
+    		justify-content: flex-end;
+		}
+
+		.nav-buttons {
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		max-width:100%;
+		align-items: flex-end;
+	}
+
+		#name-png {
+		width:20em;
+		height:5em;
+		margin-right: auto;
+		margin-left: 0;
+
+	}
+		.nav-buttons li {
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-right: 1em;
+		margin-bottom: -1em;
+		
+	}
+
+
+
+	.about-me {
+		font-size: 1.75em;
+	}
+
+	#portfolio-png {
+		width:20%;
+		margin: 2em 40% 1em 40%;
+	}
+
+	.item {
+		max-width: calc(29%);
+		margin-left: 1em;
+		margin-right: 1em
+	}
+	
+	
+	#skills-png {
+		width:20%;
+		margin: 2em 40% 1em 40%;
+	}
+
+	#contact-png {
+		width:20%;
+		margin: 2em 40% 1em 40%;
+	}
+}
