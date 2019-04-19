@@ -28,16 +28,14 @@ body {
 	font-weight: 300;
 }
 
+.item:hover {
+	
+	background-color: #ffc04d;
+}
+
 .nav-buttons li .link {
 	font-size: 1.5em;
 	font-weight: 300;
-	
-}
-
-.nav-buttons li .link:hover {
-	/* /* border-bottom: 5px; */
-	
-	/* color: black;  */
 	
 }
 
@@ -47,7 +45,11 @@ body {
 	
 }
 
+.page-logo {
 
+	max-width: 90%;
+	height: auto;
+}
 
 
 /*HEADER LAYOUT*/
@@ -68,6 +70,7 @@ header {
 .main-logo {
 	margin-left:auto;
 	margin-right: auto;
+	display: flex;
 	
 }
 
@@ -88,7 +91,7 @@ header {
 	max-width: 75%;
 }
 
-.nav-buttons  .link {
+.nav-buttons .link {
 	display:block;
 	margin: 0 auto;
 	text-decoration: none;
@@ -141,10 +144,7 @@ header {
 
 /*PORTFOLIO LAYOUT*/
 
-#portfolio-png {
-	width:50%;
-	margin: 2em 25% 1em 25%;
-}
+
 
 h2{
 	text-align: center;
@@ -159,10 +159,9 @@ h2{
 	flex-direction:column;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
 	text-align: center;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .item {
@@ -181,9 +180,16 @@ h2{
 	margin-bottom: 0;
 }
 
+.title:hover {
+	cursor: pointer;
+	color: black
+}
+
 .portfolio-img {
 	margin-left: auto;
 	margin-right: auto;
+	height: 180px;
+	width: 320px;
 	max-width: 80%;
 	padding-top: 1em;
 	box-shadow: inset 0px 0px 0px rgba(0,0,0,0.8);
@@ -193,142 +199,6 @@ h2{
 .page-description {
 	margin:.5em auto 2em auto;
 	width: 80%;
-}
-
-/*SKILLS LAYOUT*/
-
-#skills-png {
-	width: 50%;
-	margin: 2em 25% 1em 25%;
-}
-
-#skills {
-	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-	margin: 0 auto;
-}
-
-.skill-description-box {
-	margin: 0 auto -1em auto;
-	padding-top: .5em;
-	text-align: center;
-}
-
-#skills h3{
-	text-align: center;
-	margin-top: 0;
-}
-
-.skill-description {
-	font-style: italic;
-}
-
-.skill-list {
-	font-size: 2em;
-	width:40%;
-	margin-left: 30%;
-	margin-right:30%;
-	padding-bottom: .05em;
-}
-
-.skills-container {
-	display: none;
-}
-		
-
-/*CONTACT LAYOUT*/
-.contact {
-	padding-top: .1em;
-	padding-bottom: 1em;
-	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-}
-
-.contact-container {
-	display: none;
-}
-
-#contact-png {
-	width:50%;
-	margin: 2em 25% 1em 25%;
-}
-
-.contact-title {
-	margin-top: 1em;
-}
-
-.mobile-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 3em auto;
-}
-
-.phone-button a, .email-button a {
-	text-decoration: none;
-	padding: 1em .5em;
-	margin: 2em 2em 2em 2em;
-	color: seashell;
-	font-size: 1.125em;
-	font-weight: 300;
-	border: solid seashell 1px;
-	border-radius: 10px
-	}
-	
-.mobile-buttons a:hover {
-	color:#79CC32;
-	background-color: seashell;
-	border-color:#79CC32;
-}
-
-.mobile-buttons a:active {
-	color:#79CC32;
-	background-color: seashell;
-	border-color:#79CC32;
-}
-
-.phone-info, .email-info {
- 	display: none;
- 	text-align: center;
-}
-
-.contact-text {
-	padding-left: 10%;
-	padding-right:10%;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	font-style: italic;
-}
-
-/*FOOTER LAYOUT*/
-
-.footer-nav {
-	display: flex;
-	margin: 0 auto;
-	width: 90%;
-	align-items:center;
-}
-
-.footer-item {
-	display: none;
-}
-
-.footer-name {
-	margin-right: auto;
-}
-
-.footer-nav a {
-	margin-left: .5em;
-	font-weight: 300;
-	text-decoration: none;
-}
-
-.footer-nav a:hover {
-	font-weight: 600;
 }
 
 /*COLOR*/
@@ -350,10 +220,7 @@ body {
 	color: black;
 }
 
-#name-png-header{
-  width: 100%;
-  
-}
+
 
 /*RESPONSIVE*/
 
@@ -364,11 +231,6 @@ body {
 		flex-direction: column;
 	}
 	
-	.main-header {
-		justify-content: flex-end;
-
-	}
-
 	.nav-buttons {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -407,69 +269,17 @@ body {
 
 	/*RESPONSIVE PORTFOLIO */
 
-	#portfolio-png {
-	width:30%;
-	margin: 2em 35% 1em 35%;
-	}
+
 
 	#portfolio {
 		flex-direction: row;
-		width: 95%;
 		border-radius: 5px;
 	}
 
 	.item {
-		max-width: calc(50% - 2em);
+		width: 40%;
 		margin-left: 1em;
 		margin-right: 1em;
-	}
-
-	#skills {
-	border-radius: 5px;
-	margin: 0 auto;
-	width: 95%;
-	border-radius: 5px;
-	}
-
-	#skills-png {
-		 width: 30%;
-   		margin: 2em 35% 1em 35%;
-	}
-	
-	.skill-list {
-		display: none;
-	}
-
-	/*SKILLS FLEX CONTAINER*/
-
-	.skills-container {
-	display: flex;
-	flex-direction:row;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-	}	
-	
-	.skill-item {
-		max-width: calc(20% - 1em);
-		margin: 1em;
-	}
-	
-	.skill-item p {
-		text-align: center;
-		margin-top: .5em;
-	}
-
-	.skill-svg {
-	width:100%;
-	}
-	
-	#contact-png {
-		width:30%;
-		margin: 2em 35% 1em 35%;
 	}
 
 	/*RESPONSIVE FOOTER*/
@@ -488,31 +298,6 @@ body {
 		display: none;
 	}
 
-	.contact-container {
-		display:flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 300px;
-		height: 50px;
-		margin: 0 auto;
-		align-items: center;
-		justify-content: center;
-		align-content: center;
-	}
-
-	.contact-item {
-		margin-right: 1em;
-	}
-
-	.phone, .email-me {
-		margin: .5em;
-	}
-
-	.phone-number, .email-address {
-		font-weight: 600;
-		text-decoration: none;
-	}
-
 	.footer-item {
 		display: inline;
 	}
@@ -523,8 +308,11 @@ body {
 
 }
 
-@media (min-width: 1060px) {
+@media(max-width: 767px) {
 
+}
+
+@media (min-width: 1060px) {
 
 	#name-png-header{
 		width: 20em;
@@ -536,7 +324,7 @@ body {
 	}
 	
 		.wrapper {
-		max-width: 1024px;
+		max-width: 1920px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -544,7 +332,7 @@ body {
 		.main-logo {
 			padding-top: 0;
 			display: flex;
-    		justify-content: flex-end;
+    	justify-content: flex-end;
 		}
 
 		.nav-buttons {
@@ -574,25 +362,30 @@ body {
 		font-size: 1.75em;
 	}
 
-	#portfolio-png {
-		width:20%;
-		margin: 2em 40% 1em 40%;
-	}
+
 
 	.item {
-		max-width: calc(29%);
+		width: 20%;
 		margin-left: 1em;
 		margin-right: 1em
 	}
 	
-	
-	#skills-png {
-		width:20%;
-		margin: 2em 40% 1em 40%;
+}
+
+@media(max-width: 1060px) {
+
+
+	.main-logo {
+		flex-direction: column
 	}
 
-	#contact-png {
-		width:20%;
-		margin: 2em 40% 1em 40%;
+	#name-png-header{
+		width: 20em;
+	    height: 4em;
+	   
+		padding-top: 17px;
+		margin-left: auto;
+	  margin-right: auto;
 	}
 }
+

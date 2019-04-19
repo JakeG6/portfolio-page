@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-
 import router from './router';
 import { Link } from 'react-router-dom';
-
-
 
 class App extends Component {
   render() {
@@ -23,17 +20,7 @@ class App extends Component {
        	<div className="wrapper">
 			
 			{ router }
-			
-			{/* <footer>
-				<nav className="footer-nav">
-					<p className="footer-name">&copy; Jake Guss</p>
-					<a className="to-top" href="#name-png-header">BACK TO TOP</a>
-					<a className="footer-item" href="#name-png-header">HOME</a>
-					<a className="footer-item" href="#portfolio-png">PORTFOLIO</a>
-					<a className ="footer-item" href="#skills-png">SKILLS</a>
-					<a className ="footer-item" href="#contact-png">CONTACT</a>
-				</nav>
-			</footer> */}
+
 		</div>	
       </div>
     );

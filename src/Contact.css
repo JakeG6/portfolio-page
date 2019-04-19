@@ -1,0 +1,85 @@
+/*CONTACT PAGE LAYOUT*/
+.contact {
+	padding-top: .1em;
+	padding-bottom: 1em;
+	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+}
+
+.contact-container {
+	display: show;
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+#contact-png {
+	width:50%;
+	margin: 2em 25% 1em 25%;
+}
+
+.contact-link-logo {
+	height: 120px;
+	width: 120px;
+}
+
+.contact-text {
+    width: 90%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.contact-title {
+	margin-top: 1em;
+}
+
+.mobile-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 3em auto;
+}
+
+@media (max-width: 1023px) {
+	.contact-link-logo {
+		height: 60px;
+		width: 60px;
+	}
+	
+}
+
+@media (max-width: 600px) {
+
+	.contact-link-logo {
+		height: 60px;
+		width: 60px;
+	}
+
+	.contact-container {
+		display: show;
+		display: flex;
+		width: 75%;
+		justify-content: space-between;
+		margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+	.contact-link-logo {
+		height: 60px;
+		width: 60px;
+	}
+
+	.contact-container {
+		display: show;
+		display: flex;
+		width: 80%;
+		justify-content: space-between;
+		margin: 0 auto;	
+	}
+	
+}

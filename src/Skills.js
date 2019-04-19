@@ -1,25 +1,40 @@
 import React, { Component } from 'react';
+import './Skills.css';
 
-
+import { technologyList } from './technologyList';
 
 class Skills extends Component {
-  render() {
-    return (
-      	<div className="Skills">
-            <div className="wrapper">
-                <img id="skills-png" src="Images/skills-logo.png" alt="skills logo"/>
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+
+        return (
+            <div className="Skills">
+                <div >
+                    <img className="page-logo" src="Images/skills-logo.png" alt="skills logo"/>
+                </div>
                 <section id="skills">
                     <div className="skill-description-box">
-                        <p className="skill-description">In addition to my web development skills, I'm also fully trained in these other programs:</p>
+                        <div className="tech-skills">
+                            {
+                            technologyList.map(technology => {
+                                return(
+                                <div key={technology.id.toString()}>
+                                    <img src={technology.image} height="150" width="150" />
+                                    <p>{technology.name}</p>
+                                </div>
+                                )
+                            })
+                            
+                        }
+                        </div>
+                        <p className="skill-description">
+                        In addition to my web development skills, I'm also fully trained in these other programs:
+                        </p>
                     </div>
-                    <div className="skill-list">
-                        <ul>
-                            <li>Premiere</li>
-                            <li>After Effects</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                        </ul>
-                    </div>
+                    
                     <div className="skills-container">
                         <div className="skill-item">
                             <object className="skill-svg" data="Images/premierelogo.svg"></object>
@@ -39,10 +54,9 @@ class Skills extends Component {
                         </div>
                     </div>
                 </section>
-            </div>	
-      </div>
-    );
-  }
+            </div>
+        );
+    }
 }
 
 export default Skills;
