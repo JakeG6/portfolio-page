@@ -1,5 +1,4 @@
 .link {
-	/* box-sizing: border-box; */
 	height: 100px;
 }
 
@@ -29,7 +28,6 @@ body {
 }
 
 .item:hover {
-	
 	background-color: #ffc04d;
 }
 
@@ -63,7 +61,6 @@ body {
 header {
 	padding: .25em 0;
 	margin: 0 auto 2em auto;
-	
 	background-color: orange;
 }
 
@@ -71,7 +68,6 @@ header {
 	margin-left:auto;
 	margin-right: auto;
 	display: flex;
-	
 }
 
 #name-png {
@@ -81,9 +77,9 @@ header {
 }
 
 .main-header, .nav-buttons{
-		display:flex;
-		flex-direction: column;
-	}
+	display:flex;
+	flex-direction: column;
+}
 
 .nav-buttons {
 	margin:  0 auto;
@@ -99,14 +95,8 @@ header {
 	font-weight: 300;
 	text-align: center;
 	padding: .5em  .5em 0 .5em;
-	/* background-color: #FFA500; */
 	box-sizing: border-box;
 }
-
-/* li .link:hover {
-	border-bottom: 5px;
-	border-bottom-color: blue;
-} */
 
 .nav-buttons li {
 	list-style: none;
@@ -119,17 +109,16 @@ header {
 	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
 	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
-	
 }
 
 .profile-picture{
-  	padding-top: 1em;
-  	padding-bottom: 1em;
-    height: 250px;
-    width: 250px;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	height: 250px;
+	width: 250px;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
 }
 
 .about-me{
@@ -185,6 +174,7 @@ h2{
 	color: black
 }
 
+
 .portfolio-img {
 	margin-left: auto;
 	margin-right: auto;
@@ -219,8 +209,6 @@ body {
 .footer-nav a, .footer-nav p {
 	color: black;
 }
-
-
 
 /*RESPONSIVE*/
 
@@ -269,8 +257,6 @@ body {
 
 	/*RESPONSIVE PORTFOLIO */
 
-
-
 	#portfolio {
 		flex-direction: row;
 		border-radius: 5px;
@@ -316,26 +302,25 @@ body {
 
 	#name-png-header{
 		width: 20em;
-	    height: 4em;
-	   
+	  height: 4em;  
 		padding-top: 17px;
 		margin-left: 1em;
-	    margin-right: auto;
+	  margin-right: auto;
 	}
 	
-		.wrapper {
+	.wrapper {
 		max-width: 1920px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	
-		.main-logo {
-			padding-top: 0;
-			display: flex;
-    	justify-content: flex-end;
-		}
+	.main-logo {
+		padding-top: 0;
+		display: flex;
+		justify-content: flex-end;
+	}
 
-		.nav-buttons {
+	.nav-buttons {
 		flex-direction: row;
 		justify-content: flex-start;
 		flex-wrap: wrap;
@@ -343,26 +328,22 @@ body {
 		align-items: flex-end;
 	}
 
-		#name-png {
+	#name-png {
 		width:20em;
 		height:5em;
 		margin-right: auto;
 		margin-left: 0;
-
 	}
-		.nav-buttons li {
+
+	.nav-buttons li {
 		padding-left: 25px;
-		
 		margin-right: 20px;
 		margin-bottom: -1em;
-		
 	}
 
 	.about-me {
 		font-size: 1.75em;
 	}
-
-
 
 	.item {
 		width: 20%;
@@ -373,7 +354,6 @@ body {
 }
 
 @media(max-width: 1060px) {
-
 
 	.main-logo {
 		flex-direction: column

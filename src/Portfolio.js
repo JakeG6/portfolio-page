@@ -11,7 +11,7 @@ class Portfolio extends Component {
                     id: 1, 
                     image:"Images/flat-calculator.png",
                     title:"Calculator",
-                    description: "Use this interactive calculator to perform mathematical techniques like addition, subtraction, multiplication, and division.",
+                    description: "Use this basic calculator to perform addition, subtraction, multiplication, and division.",
                     link: "https://aesthetic-calculator.herokuapp.com/"
                 },
                 {
@@ -59,13 +59,13 @@ class Portfolio extends Component {
                     {this.state.projects.map(project=> {
                         return (
                             <div className="item" key={project.id.toString()}>
-                                    <a href={project.link} style={styles.a}>                          
-                                        <img className="portfolio-img" src={project.image} />
-                                    </a>
-                                    <a href={project.link} >
-                                        <h3 className="title">{project.title}</h3>
-                                    </a>
-                                    <p className="page-description">{project.description}</p>      
+                                <a href={project.link} style={styles.a}>
+                                    <img className="portfolio-img" src={project.image} />
+                                </a>
+                                <a href={project.link} >
+                                    <h3 className="title">{project.title}</h3>
+                                </a>
+                                <p className="page-description">{project.description}</p>      
                             </div>    
                         )
                     })}	
@@ -73,6 +73,7 @@ class Portfolio extends Component {
                 </section>		
             </div>
         );
+        
     }
 }
 
