@@ -2,7 +2,9 @@
   "name": "portfolio-page",
   "version": "0.1.0",
   "private": true,
-   "engines" : { "node" : "10.16.0" },
+  "engines": {
+    "node": "10.16.0"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "express-favicon": "^2.0.1",
@@ -15,7 +17,7 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
