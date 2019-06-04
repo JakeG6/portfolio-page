@@ -19,17 +19,17 @@ class Contact extends Component {
             <div className="contact-container" >
                 <div className="contact-item">
                     <a href="https://github.com/JakeG6" >
-                      <img src={require("./contact-images/GitHub-Mark-Light-120px-plus.png")} className="contact-link-logo" />
+                      <img src={require("./contact-images/GitHub-Mark-Light-120px-plus.png")} alt="Github logo" className="contact-link-logo" />
                     </a>
                 </div>
                 <div className="contact-item">
                     <a href="https://www.linkedin.com/in/jake-guss/" className="contact-link-logo">
-                      <img src={require("./contact-images/LinkedIn_logo_initials.png")} className="contact-link-logo" />
+                      <img src={require("./contact-images/LinkedIn_logo_initials.png")} alt="LinkedIn logo" className="contact-link-logo" />
                     </a>
                 </div>
                 <div className="contact-item">
                     <a href="mailto:jakeguss@gmail.com" className="contact-link-logo">
-                      <img src={require("./contact-images/email-logo.png")} className="contact-link-logo" />
+                      <img src={require("./contact-images/email-logo.png")} alt="Email logo" className="contact-link-logo" />
                     </a>
                 </div>        
             </div>

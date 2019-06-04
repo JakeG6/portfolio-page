@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.bea7bbb8.css",
   "main.css.map": "static/css/main.bea7bbb8.css.map",
-  "main.js": "static/js/main.f9beb1dc.js",
-  "main.js.map": "static/js/main.f9beb1dc.js.map",
+  "main.js": "static/js/main.a65aa2da.js",
+  "main.js.map": "static/js/main.a65aa2da.js.map",
   "static/media/JavaScript-logo.png": "static/media/JavaScript-logo.0cded3a3.png",
   "static/media/LinkedIn_logo_initials.png": "static/media/LinkedIn_logo_initials.3f60edfd.png",
   "static/media/css3-logo.png": "static/media/css3-logo.970b93f0.png",
@@ -18,5 +18,6 @@
   "static/media/mongoosejs-logo.png": "static/media/mongoosejs-logo.cd7c3398.png",
   "static/media/mysql-logo.png": "static/media/mysql-logo.bab2c760.png",
   "static/media/nodejs-logo.png": "static/media/nodejs-logo.6dcf6999.png",
-  "static/media/react-icon.png": "static/media/react-icon.1994f143.png"
+  "static/media/react-icon.png": "static/media/react-icon.1994f143.png",
+  "static/media/redux-logo.png": "static/media/redux-logo.59c46753.png"
 }

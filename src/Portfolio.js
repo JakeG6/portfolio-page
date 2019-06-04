@@ -34,6 +34,13 @@ class Portfolio extends Component {
                     title:"Excelsior",
                     description: "Search a custom MongoDB database for a variety of famous superheroes and villains. The site administrator can even upload and create new characters with a browser interface.",
                     link: "https://excelsior-front.herokuapp.com/"
+                },
+                {
+                    id: 5,
+                    image:"Images/illustration-list.png",
+                    title:"The Greatest Redux List Ever",
+                    description: "The project name may be hyperbole, but Redux is a much more effecient way to handle a central state in React. I'm glad I learned this powerful tool, and I'll be using it in any big React-based app in the future. Styled with Bootstrap.",
+                    link: "https://redux-list.herokuapp.com/"
                 }
             ],
             
@@ -60,7 +67,7 @@ class Portfolio extends Component {
                         return (
                             <div className="item" key={project.id.toString()}>
                                 <a href={project.link} style={styles.a}>
-                                    <img className="portfolio-img" src={project.image} />
+                                    <img className="portfolio-img" alt="project representation" src={project.image} />
                                 </a>
                                 <a href={project.link} >
                                     <h3 className="title">{project.title}</h3>

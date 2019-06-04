@@ -4,9 +4,7 @@ import './Skills.css';
 import { technologyList } from './technologyList';
 
 class Skills extends Component {
-    constructor(props) {
-        super(props)
-    }
+    
 
     render() {
 
@@ -21,8 +19,8 @@ class Skills extends Component {
                             {
                             technologyList.map(technology => {
                                 return(
-                                <div key={technology.id.toString()}>
-                                    <img src={technology.image} height="150" width="150" />
+                                <div key={technologyList.indexOf(technology).toString()}>
+                                    <img src={technology.image} alt={`Logo of ${technology.name}`} height="150" width="150" />
                                     <p>{technology.name}</p>
                                 </div>
                                 )
@@ -37,19 +35,19 @@ class Skills extends Component {
                     
                     <div className="skills-container">
                         <div className="skill-item">
-                            <object className="skill-svg" data="Images/premierelogo.svg"></object>
+                            <object className="skill-svg" alt="Logo for Adobe premiere" data="Images/premierelogo.svg"></object>
                             <h3 className="title">Premiere</h3>
                         </div>
                         <div className="skill-item">
-                            <object className="skill-svg" data="Images/aelogo.svg"></object>
+                            <object className="skill-svg" alt="Logo for Adobe After Effects" data="Images/aelogo.svg"></object>
                             <h3 className="title">After Effects</h3>
                         </div>
                         <div className="skill-item">
-                            <object className="skill-svg" data="Images/photoshoplogo.svg"></object>	
+                            <object className="skill-svg" alt="Logo for Adobe Photoshop" data="Images/photoshoplogo.svg"></object>	
                             <h3 className="title">Photoshop</h3>
                         </div>
                         <div className="skill-item">
-                            <object className="skill-svg" data="Images/illustratorlogo.svg"></object>
+                            <object className="skill-svg" alt="Logo for Adobe Illustrator" data="Images/illustratorlogo.svg"></object>
                             <h3 className="title">Illustrator</h3>
                         </div>
                     </div>
