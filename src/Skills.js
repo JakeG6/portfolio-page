@@ -17,16 +17,15 @@ class Skills extends Component {
                     <div className="skill-description-box">
                         <div className="tech-skills">
                             {
-                            technologyList.map(technology => {
-                                return(
-                                <div key={technologyList.indexOf(technology).toString()}>
-                                    <img src={technology.image} alt={`Logo of ${technology.name}`} height="150" width="150" />
-                                    <p>{technology.name}</p>
-                                </div>
-                                )
+                                technologyList.map(technology => {
+                                    return(
+                                    <div key={technologyList.indexOf(technology).toString()}>
+                                        <img src={technology.image} alt={`Logo of ${technology.name}`} height="150" width="150" />
+                                        <p>{technology.name}</p>
+                                    </div>
+                                    )
                             })
-                            
-                        }
+                            }
                         </div>
                         <p className="skill-description">
                         In addition to my web development skills, I'm also fully trained in these other programs:

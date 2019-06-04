@@ -66,7 +66,11 @@ width:100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1049px;
+    max-width: 1700px;
+}
+
+.tech-skills div {
+margin: 0 2em;
 }
 
 @media(max-width: 1060px) {
@@ -86,7 +90,7 @@ width:100%;
 
 @media(max-width: 1000px) {
 	.tech-skills {
-		max-width: 740px;
+		max-width: 1049px;
 	}
 
 }
@@ -99,15 +103,22 @@ width:100%;
 
 }
 
+@media(max-width: 414px) {
+
+	.tech-skills div {
+		margin: 0 .5em;
+	}	
+
+}
+
 @media(max-width: 375px) {
     #skills {
         width: 100%;
-    }
+	}
 
     .skill-item {
         max-width:140px;
     }
-
-    
+  
 }
 

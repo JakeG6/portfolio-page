@@ -75,8 +75,7 @@ class Portfolio extends Component {
                                 <p className="page-description">{project.description}</p>      
                             </div>    
                         )
-                    })}	
-                    
+                    })}	         
                 </section>		
             </div>
         );
