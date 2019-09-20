@@ -9,8 +9,10 @@ class Home extends Component {
         <section className="profile">
             <img className="profile-picture" src="Images/rainforest1.jpg" alt="A forest"/>
             <p className="about-me">Hi, I'm a full-stack developer who loves Node-based technologies. 
-            On this site you'll find my various projects and contact links. I'm excited to continue learning and putting all my skills to use!</p>
-        </section>        
+              On this site you'll find my various projects and contact links. I'm excited to continue learning and putting all my skills to use!
+            </p>
+        </section>
+                
       </div>
     );
   }
