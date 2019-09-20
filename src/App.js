@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import router from './router';
-import posed, { PoseGroup } from 'react-pose';
+//import posed, { PoseGroup } from 'react-pose';
 import { Link } from 'react-router-dom';
 
 class App extends Component {

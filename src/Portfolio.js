@@ -58,22 +58,22 @@ class Portfolio extends Component {
 
     render() {
 
-        const Item = posed.div({
-            hoverable: true,
-            pressable: true,
-            init: {
-              scale: 1,
-              boxShadow: '0px 0px 0px rgba(0,0,0,0)'
-            },
-            hover: {
-              scale: 1.2,
-              boxShadow: '0px 5px 10px rgba(0,0,0,0.2)'
-            },
-            press: {
-              scale: 1.1,
-              boxShadow: '0px 2px 5px rgba(0,0,0,0.1)'
-            }
-        });
+        // const Item = posed.div({
+        //     hoverable: true,
+        //     pressable: true,
+        //     init: {
+        //       scale: 1,
+        //       boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+        //     },
+        //     hover: {
+        //       scale: 1.2,
+        //       boxShadow: '0px 5px 10px rgba(0,0,0,0.2)'
+        //     },
+        //     press: {
+        //       scale: 1.1,
+        //       boxShadow: '0px 2px 5px rgba(0,0,0,0.1)'
+        //     }
+        // });
 
         const styles = {
             a: {
@@ -97,7 +97,7 @@ class Portfolio extends Component {
                     {this.state.projects.map(project=> {
                         return (
                             
-                            <Item className="item" key={project.id.toString()}>
+                            <div className="item" key={project.id.toString()}>
                                 <a href={project.link} style={styles.a}>
                                     <img className="portfolio-img" alt="project representation" src={project.image} />
                                 </a>
@@ -107,7 +107,7 @@ class Portfolio extends Component {
                                    
                                 <p className="page-description">{project.description}</p>
                                 <a href={project.code} target="_blank" className="code-button">Source Code</a>
-                            </Item>    
+                            </div>    
                         )
                     })}	         
                 </section>		

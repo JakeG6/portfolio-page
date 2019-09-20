@@ -89,10 +89,16 @@ header {
 	box-sizing: border-box;
 }
 
+.link p {
+	
+	transition: border .25s;
+	
+}
 
 .link p:hover {
 	color: black;
 	border-bottom: 10px solid black;
+	
 }
 
 .nav-buttons li {
@@ -134,7 +140,7 @@ header {
 
 p, a, .link, li, h3 {
 	color:seashell;
-	transition: color 1s;
+	/* transition: color .25s; */
 }
 
 body {
