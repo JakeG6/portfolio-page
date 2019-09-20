@@ -13,14 +13,14 @@
     "hey-listen": "^1.0.8",
     "path": "^0.12.7",
     "popmotion-pose": "^3.4.8",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-pose": "^4.0.8",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.13",
     "tslib": "^1.10.0",
-    "webpack": "^4.40.2"
+    "webpack": "^3.11.0"
   },
   "scripts": {
     "start": "node server.js",
