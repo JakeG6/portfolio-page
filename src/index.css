@@ -105,6 +105,29 @@ header {
 	list-style: none;
 }
 
+/* HOME */
+.resume-button-container {
+	display: flex;
+	flex-direction: column
+}
+
+.resume-button {
+	width: 2em;
+	text-decoration: none;
+    font-size: 1em;
+    /* padding: .5em .75em;  */
+    border-bottom: 3px seashell solid;
+    
+    transition: color .25s border-bottom .25s;
+}
+
+.resume-button:hover {
+    color: black;
+    border-bottom: 3px black solid;
+    
+
+}
+
 /*PROFILE LAYOUT*/
 
 .profile {
@@ -133,8 +156,6 @@ header {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
-
-
 
 /*COLOR*/
 

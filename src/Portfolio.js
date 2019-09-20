@@ -62,14 +62,14 @@ class Portfolio extends Component {
             pressable: true,
             init: {
               scale: 1,
-              boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+              bboxShadow: '-2px 4px 7px 2px rgba(0,0,0,0.75)'
             },
             hover: {
               scale: 1.05,
-              boxShadow: '0px 5px 10px rgba(0,0,0,0.2)'
+              boxShadow: '0px 5px 10px rgba(0,0,0,0.9)'
             },
             press: {
-              scale: 1.25,
+              scale: 1.025,
               boxShadow: '0px 2px 5px rgba(0,0,0,0.1)'
             }
         });
@@ -95,15 +95,13 @@ class Portfolio extends Component {
                 <section id="portfolio">
                     {this.state.projects.map(project=> {
                         return (
-                            
                             <Item className="item" key={project.id.toString()}>
                                 <a href={project.link} style={styles.a}>
                                     <img className="portfolio-img" alt="project representation" src={project.image} />
                                 </a>
                                 <a href={project.link} >
                                     <h3 className="title">{project.title}</h3>
-                                </a>
-                                   
+                                </a>       
                                 <p className="page-description">{project.description}</p>
                                 <a href={project.code} target="_blank" className="code-button">Source Code</a>
                             </Item>    
