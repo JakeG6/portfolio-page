@@ -1,5 +1,5 @@
 import React, { Component, createContext } from 'react';
-import "./Portfolio.css"
+import "./Portfolio.css";
 import posed from 'react-pose';
 
 
@@ -99,7 +99,7 @@ class Portfolio extends Component {
                                 <a href={project.link} style={styles.a}>
                                     <img className="portfolio-img" alt="project representation" src={project.image} />
                                 </a>
-                                <a href={project.link} >
+                                <a href={project.link} className="title-anchor">
                                     <h3 className="title">{project.title}</h3>
                                 </a>       
                                 <p className="page-description">{project.description}</p>
