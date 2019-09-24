@@ -1,5 +1,5 @@
 import React, { Component, createContext } from 'react';
-import styles from "./Portfolio.module.css"
+import "./Portfolio.css"
 import posed from 'react-pose';
 
 
