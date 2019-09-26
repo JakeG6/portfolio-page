@@ -1,0 +1,118 @@
+/*PORTFOLIO LAYOUT*/
+
+h2{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	display: none;
+}
+
+#portfolio {
+	display: flex;
+	flex-direction:column;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	-webkit-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+	box-shadow: -2px 4px 7px 2px rgba(0,0,0,0.75);
+}
+
+.title-anchor {
+    transition: color .25s;
+}
+
+.title-anchor:hover {
+    color: black;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 1.3em;
+    margin-bottom: 0;
+    transition: color .25s;
+}
+
+.title:hover {
+    text-decoration: none;
+	cursor: pointer;
+    color: black;  
+}
+
+.portfolio-img {
+	margin-left: auto;
+	margin-right: auto;
+	height: 180px;
+	width: 320px;
+	padding-top: 1em;
+	box-shadow: inset 0px 0px 0px rgba(0,0,0,0.8);
+	z-index: -2;
+}
+
+.page-description {
+    text-align: left;
+	margin:.5em auto 2em auto;
+	width: 80%;
+}
+
+.code-button {
+    position: absolute;
+    left: 5;
+    right: 5;
+    bottom: 1em;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: .5em .75em; 
+    border: 3px seashell solid;
+    border-radius: 10px;
+    transition: color .25s, background-color .25s;
+}
+
+.code-button:hover {
+    color: orange;
+    background-color: seashell;
+}
+
+/*RESPONSIVE PORTFOLIO */
+
+#portfolio {
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.item {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+@media (min-width: 365px) {
+    .item {
+        width: 350px;
+        margin-left: .25em;
+        margin-right: .25em;
+    }
+}
+
+@media (min-width: 700) {
+    .item {
+        width: 350px;
+    }
+}
+
+@media (min-width: 765px) {
+    .item {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
