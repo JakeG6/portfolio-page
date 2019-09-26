@@ -9,22 +9,6 @@ class Portfolio extends Component {
         super(props);
         this.state = {
             projects: [
-                {   
-                    id: 1, 
-                    image:"Images/flat-calculator.png",
-                    title:"Calculator",
-                    description: "Use this basic calculator to perform addition, subtraction, multiplication, and division.",
-                    link: "https://aesthetic-calculator.herokuapp.com/",
-                    code: "https://github.com/JakeG6/react-calculator"
-                },
-                {
-                    id: 2,
-                    image:"Images/quote-machine-flat.png",
-                    title:"Quote Machine",
-                    description: "Press the button and receive a random inspirational or memorable quote delivered fresh from an API!",
-                    link: "https://quote-machine-client.herokuapp.com/",
-                    code: "https://github.com/JakeG6/quote-machine"
-                },
                 {
                     id: 3,
                     image:"Images/appli-logo.png",
@@ -41,6 +25,24 @@ class Portfolio extends Component {
                     link: "https://excelsior-front.herokuapp.com/",
                     code: "https://github.com/JakeG6/excelsior-front"
                 },
+                {   
+                    id: 1, 
+                    image:"Images/flat-calculator.png",
+                    title:"Calculator",
+                    description: "Use this basic calculator to perform addition, subtraction, multiplication, and division.",
+                    link: "https://aesthetic-calculator.herokuapp.com/",
+                    code: "https://github.com/JakeG6/react-calculator"
+                },
+                {
+                    id: 2,
+                    image:"Images/quote-machine-flat.png",
+                    title:"Quote Machine",
+                    description: "Press the button and receive a random inspirational or memorable quote delivered fresh from an API!",
+                    link: "https://quote-machine-client.herokuapp.com/",
+                    code: "https://github.com/JakeG6/quote-machine"
+                },
+                
+                
                 {
                     id: 5,
                     image:"Images/illustration-list.png",
