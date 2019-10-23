@@ -3,9 +3,9 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from './Home'
-import Portfolio from './Portfolio';
-import Skills from './Skills';
-import Contact from './Contact';
+import Portfolio from './Portfolio/Portfolio';
+import Skills from './Skills/Skills';
+import Contact from './Contact/Contact';
 
 export default (
   <Switch>

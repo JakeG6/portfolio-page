@@ -65,7 +65,7 @@ export const technologyList = [
         image: require("./skill-images/passportjs-logo.png")
     },
     {
-        id: 10   ,
+        id: 10,
         name:"JSON Web Token", 
         image: require("./skill-images/jwt-logo.png")
     },

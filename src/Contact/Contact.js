@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './Contact.css';
+// import { createRequireFromPath } from 'module';
 
 class Contact extends Component {
-
-
 
   render() {
 
     return (
       <div className="Contact">
-        <div >
+        <div>
           <h2 className="page-logo" alt="contact logo">CONTACT</h2>
         </div>        
         <section className='contact'>
