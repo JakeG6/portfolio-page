@@ -1,65 +1,60 @@
-/* Position and sizing of burger button */
-.bm-burger-button {
+#flyoutMenu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c3840;
   position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 14px;
+  top: 0;
+  right: 0;
+  transition: transform .3s
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
 }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #e67e00;
+#flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+ 
+#flyoutMenu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
 }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #a90000;
+#roundButton {
+  background-color: #96D9FF;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid #0065A6;
+  outline: none;
+  transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+}
+ 
+#roundButton:hover {
+  background-color: #96D9FF;
+  cursor: pointer;
+  border-color: #003557;
+  transform: scale(1.2, 1.2);
+}
+ 
+#roundButton:active {
+  border-color: #003557;
+  background-color: #FFF;
 }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
+
+
+
+
+@media(min-width: 1000px) {
+  #roundButton {
+    display: none;
+  }
 }
 
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #e67e00;
-}
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations 
-- you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-  position: fixed;
-}
-
-/* General sidebar styles */
-.bm-menu {
-  background: #373a47;
-  font-size: 1.15em;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-}
-
-/* Individual item */
-.bm-item {
-  display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+@media(max-width: 999px) {
+  .nav-buttons {
+    display: none;
+  }
 }
