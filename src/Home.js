@@ -4,6 +4,9 @@ class Home extends Component {
   render() {
     return (
       <div className="Component">
+        <div >
+          <h2 className="page-logo" alt="portfolio logo">WELCOME</h2>
+        </div>
         <section className="profile">
           <div className="profile-top">
             

@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import './Skills.css';
-
 import { technologyList } from './technologyList';
 
 class Skills extends Component {
-    
 
     render() {
 
         return (
             <div className="Skills">
                 <div >
-                    <img className="page-logo" src="Images/skills-logo.png" alt="skills logo"/>
+                    <h2 className="page-logo" alt="skills logo">SKILLS</h2>
                 </div>
                 <section id="skills">
                     <div className="skill-description-box">
@@ -35,19 +33,19 @@ class Skills extends Component {
                     <div className="skills-container">
                         <div className="skill-item">
                             <object className="skill-svg" alt="Logo for Adobe premiere" data="Images/premierelogo.svg"></object>
-                            <h3 className="title">Premiere</h3>
+                            <p>Premiere</p>
                         </div>
                         <div className="skill-item">
                             <object className="skill-svg" alt="Logo for Adobe After Effects" data="Images/aelogo.svg"></object>
-                            <h3 className="title">After Effects</h3>
+                            <p>After Effects</p>
                         </div>
                         <div className="skill-item">
                             <object className="skill-svg" alt="Logo for Adobe Photoshop" data="Images/photoshoplogo.svg"></object>	
-                            <h3 className="title">Photoshop</h3>
+                            <p>Photoshop</p>
                         </div>
                         <div className="skill-item">
                             <object className="skill-svg" alt="Logo for Adobe Illustrator" data="Images/illustratorlogo.svg"></object>
-                            <h3 className="title">Illustrator</h3>
+                            <p >Illustrator</p>
                         </div>
                     </div>
                 </section>

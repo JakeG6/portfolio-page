@@ -18,8 +18,10 @@ body {
 	font-size: 1.1em;
 }
 
-.nav .link {
+
+.link {
 	font-size: 2em;
+	font-weight: 300;	
 }
 
 .footer-nav .link {
@@ -27,78 +29,58 @@ body {
 	font-weight: 300;
 }
 
-.nav-buttons li .link {
-	font-size: 1.5em;
-	font-weight: 300;	
-}
-
-
-
 .page-logo {
-
+	margin-left: 2em;
 	max-width: 90%;
-	height: auto;
+	color: #2c3840;
+	font-family: 'Big Shoulders Text', cursive;
+	font-size: 5em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 
 /*HEADER LAYOUT*/
 
-#name {
-	width:100%;
-	text-align: center;
-	display: none;
-}
-
 header {
-	padding: .25em 0;
-	margin: 0 auto 2em auto;
-	background-color: orange;
-}
-
-.main-logo {
-	margin-left:auto;
-	margin-right: auto;
 	display: flex;
+	align-items: center;
 }
 
-#name-png {
-	margin-left:auto;
-	margin-right: auto;
-	width: 100%;
+#name-header {
+	color: #e67e00;
+	font-family: 'Big Shoulders Text', cursive;
+	font-size: 3em;
+	margin: 0 auto 0 1em;
 }
 
-.main-header, .nav-buttons{
-	display:flex;
-	flex-direction: column;
+header ul {
+	display: flex;
+	flex-direction:row;
 }
 
-.nav-buttons {
-	margin:  0 auto;
-	padding-left: 0;
-	max-width: 75%;
+nav {
+	height: 7em;
+	margin-right:2em;
 }
 
-.nav-buttons .link {
+.link {
 	display: block;
-	margin: 0 auto;
 	text-decoration: none;
-	font-size: 1.125em;
+	font-size: 1.5em;
 	font-weight: 300;
-	text-align: center;
-	padding: .5em  .5em 0 .5em;
+	/* padding: .5em  .5em 0 .5em; */
 	box-sizing: border-box;
+	padding: .5em;
 }
 
 .link p {
-	
 	transition: border .25s;
-	
 }
 
 .link p:hover {
-	color: black;
-	border-bottom: 10px solid black;
-	
+	color: #e67e00;
+	border-bottom: 10px solid #e67e00;
 }
 
 .nav-buttons li {
@@ -115,17 +97,8 @@ header {
 	width: 2em;
 	text-decoration: none;
     font-size: 1em;
-    /* padding: .5em .75em;  */
-    border-bottom: 3px seashell solid;
-    
-    transition: color .25s border-bottom .25s;
-}
-
-.resume-button:hover {
-    color: black;
-    border-bottom: 3px black solid;
-    
-
+	/* padding: .5em .75em;  */
+	color: #e67e00;	
 }
 
 /*PROFILE LAYOUT*/
@@ -161,7 +134,7 @@ header {
 
 p, a, .link, li, h3 {
 	color:seashell;
-	/* transition: color .25s; */
+	text-decoration: none;
 }
 
 body {
@@ -169,8 +142,8 @@ body {
 	background: linear-gradient( 180deg, white, #AFEEEE);
 }
 
- .main-header, .profile, .item, .skills-container, .profile, #skills, .contact {
-	background-color: #FFA500;
+ header, .profile, .item, .skills-container, .profile, #skills, .contact {
+	background-color: #2c3840;
 }
 
 .footer-nav a, .footer-nav p {
@@ -180,17 +153,6 @@ body {
 /*RESPONSIVE*/
 
 @media (min-width: 768px) {
-	
-	.main-header, .nav-buttons{
-		display:flex;
-		flex-direction: column;
-	}
-	
-	.nav-buttons {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
 	
 
 	/*RESPONSIVE PROFILE*/
@@ -255,46 +217,11 @@ body {
 }
 
 @media (min-width: 1060px) {
-
-	#name-png-header{
-		width: 20em;
-	  height: 4em;  
-		padding-top: 17px;
-		margin-left: 1em;
-	  margin-right: auto;
-	}
 	
 	.wrapper {
 		max-width: 1920px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	
-	.main-logo {
-		padding-top: 0;
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.nav-buttons {
-		flex-direction: row;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-		max-width:100%;
-		align-items: flex-end;
-	}
-
-	#name-png {
-		width:20em;
-		height:5em;
-		margin-right: auto;
-		margin-left: 0;
-	}
-
-	.nav-buttons li {
-		padding-left: 25px;
-		margin-right: 20px;
-		margin-bottom: -1em;
 	}
 
 	.about-me {
@@ -311,17 +238,5 @@ body {
 
 @media(max-width: 1060px) {
 
-	.main-logo {
-		flex-direction: column
-	}
-
-	#name-png-header{
-		width: 20em;
-	    height: 4em;
-	   
-		padding-top: 17px;
-		margin-left: auto;
-	  margin-right: auto;
-	}
 }
 

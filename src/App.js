@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="main-logo">
-					<img id="name-png-header" src="Images/main-logo.png" alt="main logo"/>
+					<h1 id="name-header" alt="main logo">JACOB GUSS</h1>
 					<nav>
 						<ul className="nav-buttons">
 							<li><Link className="link" to="/"><p>HOME</p></Link></li>

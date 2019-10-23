@@ -10,7 +10,7 @@ class Contact extends Component {
     return (
       <div className="Contact">
         <div >
-          <img className="page-logo" src="Images/contact-logo.png" alt="contact logo"/>
+          <h2 className="page-logo" alt="contact logo">CONTACT</h2>
         </div>        
         <section className='contact'>
             <div id ="contact-info">

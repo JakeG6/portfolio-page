@@ -78,13 +78,8 @@ margin: 0 2em;
 		max-width: 1060px;
 	}
 
-	#name-png-header{
-		width: 20em;
-	    height: 4em;
-	   
-		padding-top: 17px;
-		margin-left: auto;
-	  margin-right: auto;
+	#name-header{
+	
 	}
 }
 

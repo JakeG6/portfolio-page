@@ -92,7 +92,7 @@ class Portfolio extends Component {
         return (
             <div>
                 <div >
-                     <img className="page-logo" src="Images/portfolio-logo.png" alt="portfolio logo"/>
+                     <h2 className="page-logo" alt="portfolio logo">PORTFOLIO</h2>
                 </div>
                 <section id="portfolio">
                     {this.state.projects.map(project=> {

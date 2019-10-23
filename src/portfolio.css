@@ -1,11 +1,9 @@
 /*PORTFOLIO LAYOUT*/
 
 h2{
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2em;
-	display: none;
+	
+	margin-left: 2em;
+	
 }
 
 #portfolio {
@@ -40,13 +38,14 @@ h2{
 	font-weight: bold;
 	font-size: 1.3em;
     margin-bottom: 0;
+    color: #e67e00;
     transition: color .25s;
+    text-decoration: none;
 }
 
 .title:hover {
-    text-decoration: none;
-	cursor: pointer;
-    color: black;  
+    
+	cursor: pointer; 
 }
 
 .portfolio-img {
@@ -67,20 +66,19 @@ h2{
 
 .code-button {
     position: absolute;
-    left: 5;
-    right: 5;
+    color: #e67e00;
     bottom: 1em;
     text-decoration: none;
     font-size: 1.25em;
     padding: .5em .75em; 
-    border: 3px seashell solid;
+    border: 3px #e67e00 solid;
     border-radius: 10px;
     transition: color .25s, background-color .25s;
 }
 
 .code-button:hover {
-    color: orange;
-    background-color: seashell;
+    color: #2c3840;
+    background-color: #e67e00;;
 }
 
 /*RESPONSIVE PORTFOLIO */
