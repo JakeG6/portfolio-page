@@ -57,7 +57,7 @@ header {
 header ul {
 	display: flex;
 	flex-direction:row;
-}
+} 
 
 nav {
 	height: 7em;
@@ -83,9 +83,9 @@ nav {
 	border-bottom: 10px solid #e67e00;
 }
 
-.nav-buttons li {
+/* .nav-buttons li {
 	list-style: none;
-}
+} */
 
 /* HOME */
 .resume-button-container {
