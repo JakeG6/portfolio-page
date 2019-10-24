@@ -45,10 +45,10 @@ const HamburgerMenu = () => {
                 </nav> */}
             </header>
             <div id="flyoutMenu" onMouseDown={handleMouseDown} className={visibility}>
-                <li><Link className="link" to="/"><p>HOME</p></Link></li>
-                <li><Link className="link" to="/portfolio"><p>PORTFOLIO</p></Link></li>
-                <li><Link className="link" to="/skills"><p>SKILLS</p></Link></li>
-                <li><Link className="link" to="/contact"><p>CONTACT</p></Link></li>
+                <Link className="link" to="/"><p>HOME</p></Link>
+                <Link className="link" to="/portfolio"><p>PORTFOLIO</p></Link>
+                <Link className="link" to="/skills"><p>SKILLS</p></Link>
+                <Link className="link" to="/contact"><p>CONTACT</p></Link>
             </div>
         </div> 
     );
