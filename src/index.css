@@ -214,8 +214,11 @@ body {
 
 }
 
-@media(max-width: 767px) {
-
+@media(max-width: 500px) {
+	.page-logo {
+		margin-left:auto;
+		margin-right: auto;
+	}
 }
 
 @media (min-width: 1060px) {
