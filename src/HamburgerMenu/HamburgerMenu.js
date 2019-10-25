@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import router from '../router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 import './HamburgerMenu.css'
 
@@ -8,9 +10,10 @@ import { Link } from 'react-router-dom';
 
 const HamburgerMenu = () => {
     
+    //turn the menu on or off
     const [menuOpen, setMenuOpen] = useState(false)
 
-    const handleMouseDown = e => {
+    const handleOnClick = e => {
         setMenuOpen(!menuOpen)
         console.log("clicked");
         e.stopPropagation();
@@ -34,7 +37,14 @@ const HamburgerMenu = () => {
                         <li><Link className="link" to="/contact"><p>CONTACT</p></Link></li>
                     </ul>
                 </nav>
-                <button id="roundButton" onMouseDown={handleMouseDown}></button>
+                {/* <button id="roundButton" onClick={handleOnClick}></button> */}
+                <FontAwesomeIcon 
+                    id="menu-button"
+                    icon={faBars} 
+                    size="3x" 
+                    color="seashell" 
+                    onClick={handleOnClick} 
+                />
                 {/* <nav>
                     <ul className="nav-buttons">
                         <li><Link className="link" to="/"><p>HOME</p></Link></li>
@@ -44,7 +54,7 @@ const HamburgerMenu = () => {
                     </ul>
                 </nav> */}
             </header>
-            <div id="flyoutMenu" onMouseDown={handleMouseDown} className={visibility}>
+            <div id="flyoutMenu" onClick={handleOnClick} className={visibility}>
                 <Link className="link" to="/"><p>HOME</p></Link>
                 <Link className="link" to="/portfolio"><p>PORTFOLIO</p></Link>
                 <Link className="link" to="/skills"><p>SKILLS</p></Link>
