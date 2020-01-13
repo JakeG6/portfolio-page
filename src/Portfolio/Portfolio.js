@@ -38,7 +38,7 @@ class Portfolio extends Component {
                     image:"Images/quote-machine-flat.png",
                     title:"Quote Machine",
                     description: "Press the button and receive a random inspirational or memorable quote delivered fresh from an API!",
-                    link: "https://quote-machine-client.herokuapp.com/",
+                    link: "https://thequotemachine.herokuapp.com//",
                     code: "https://github.com/JakeG6/quote-machine"
                 },
                 
