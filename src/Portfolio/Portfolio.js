@@ -10,6 +10,14 @@ class Portfolio extends Component {
         this.state = {
             projects: [
                 {
+                    id: 6,
+                    image:"Images/kino-logo.png",
+                    title:"Kino",
+                    description: "A social network for movie buffs! Search for movies, post reviews, and vote on other user's comments. Built with Firebase and React Bootstrap.",
+                    link: "https://kino-e29ae.web.app/",
+                    code: "https://github.com/JakeG6/kino"
+                },
+                {
                     id: 3,
                     image:"Images/appli-logo.png",
                     title:"APPLi",
