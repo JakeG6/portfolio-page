@@ -55,11 +55,11 @@ class Portfolio extends Component {
                 
                 {
                     id: 5,
-                    image:"Images/illustration-list.png",
-                    title:"The Greatest Redux List Ever",
-                    description: "The project name may be hyperbole, but Redux is a much more effecient way to handle a central state in React. I'm glad I learned this powerful tool, and I'll be using it in any big React-based app in the future. Styled with Bootstrap.",
-                    link: "https://redux-list.herokuapp.com/",
-                    code: "https://github.com/JakeG6/redux-list"
+                    image:"Images/jacksorbetter.jpg",
+                    title:"Jacks or Better",
+                    description: "The popular casino game comes to React. Try your hand at a few rounds of this classic video poker variant: No actual betting required! Built as part of an application to a resort company.",
+                    link: "https://jacks-or-better.onrender.com/",
+                    code: "https://github.com/JakeG6/jacks-or-better"
                 }
             ],
             
