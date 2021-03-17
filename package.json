@@ -13,6 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
+    "framer-motion": "^3.10.5",
     "hey-listen": "^1.0.8",
     "path": "^0.12.7",
     "popmotion-pose": "^3.4.8",

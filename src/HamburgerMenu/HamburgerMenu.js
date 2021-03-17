@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import router from '../router';
+// import router from '../router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -15,7 +15,7 @@ const HamburgerMenu = () => {
 
     const handleOnClick = e => {
         setMenuOpen(!menuOpen)
-        console.log("clicked");
+        // console.log("clicked");
         e.stopPropagation();
     } 
 

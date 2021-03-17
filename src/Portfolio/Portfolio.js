@@ -1,6 +1,8 @@
 import React, { Component, createContext } from 'react';
 import "./portfolio.css";
-import posed from 'react-pose';
+// import posed from 'react-pose';
+import { motion, MotionConfig, useMotionValue, useTransform } from "framer-motion"
+
 
 
 class Portfolio extends Component {
@@ -67,29 +69,11 @@ class Portfolio extends Component {
 
     render() {
 
-        const Item = posed.div({
-            hoverable: true,
-            pressable: true,
-            init: {
-              scale: 1,
-              bboxShadow: '-2px 4px 7px 2px rgba(0,0,0,0.75)'
-            },
-            hover: {
-              scale: 1.05,
-              boxShadow: '0px 5px 10px rgba(0,0,0,0.9)'
-            },
-            press: {
-              scale: 1.025,
-              boxShadow: '0px 2px 5px rgba(0,0,0,0.1)'
-            }
-        });
-
         const styles = {
             a: {
                 textDecoration: "none"
             },
             codeLink: {
-                
                 
                 textAlign: "center",
                 textDecoration: "none"
@@ -105,7 +89,7 @@ class Portfolio extends Component {
                 <section id="portfolio">
                     {this.state.projects.map(project=> {
                         return (
-                            <Item className="item" key={project.id.toString()}>
+                            <motion.a whileHover={{ scale: 1.05, boxShadow: '0px 5px 10px rgba(0,0,0,0.9)' }} className="item" key={project.id.toString()}>
                                 <a href={project.link} style={styles.a}>
                                     <img className="portfolio-img" alt="project representation" src={project.image} />
                                 </a>
@@ -114,7 +98,7 @@ class Portfolio extends Component {
                                 </a>       
                                 <p className="page-description">{project.description}</p>
                                 <a href={project.code} target="_blank" className="code-button">Source Code</a>
-                            </Item>    
+                            </motion.a>    
                         )
                     })}	             
                 </section>		
