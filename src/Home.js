@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Portfolio from './Portfolio/Portfolio';
 
-import { motion, MotionConfig, useMotionValue, useTransform } from "framer-motion";
+import { motion, AnimatePresence, MotionConfig, useMotionValue, useTransform } from "framer-motion";
 import "./home.css";
 
 class Home extends Component {
@@ -21,7 +21,12 @@ class Home extends Component {
   }
 
     return (
-      <div className="Component">
+
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
+
         <div >
           <h2 className="page-logo" alt="portfolio logo">WELCOME</h2>
         </div>
@@ -35,9 +40,9 @@ class Home extends Component {
           </p>
         </section>
         < Portfolio />
-      
+        
+        </motion.div>
 
-      </div>
     );
   }
 }

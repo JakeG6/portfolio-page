@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import './Skills.css';
 import { technologyList } from './technologyList';
+import { motion, AnimatePresence, MotionConfig, useMotionValue, useTransform } from "framer-motion";
+
 
 class Skills extends Component {
 
     render() {
 
         return (
-            <div className="Skills">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="Skills"
+            >
                 <div >
                     <h2 className="page-logo" alt="skills logo">SKILLS</h2>
                 </div>
@@ -49,7 +56,7 @@ class Skills extends Component {
                         </div>
                     </div>
                 </section>
-            </div>
+            </motion.div>
         );
     }
 }

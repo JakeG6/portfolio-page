@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import './Contact.css';
 // import { createRequireFromPath } from 'module';
+import { motion, AnimatePresence, MotionConfig, useMotionValue, useTransform } from "framer-motion";
 
 class Contact extends Component {
 
   render() {
 
     return (
-      <div className="Contact">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="Contact"
+      >
         <div>
           <h2 className="page-logo" alt="contact logo">CONTACT</h2>
         </div>        
@@ -33,7 +39,7 @@ class Contact extends Component {
                 </div>        
             </div>
         </section>
-      </div>
+      </motion.div>
     );
   }
 }
