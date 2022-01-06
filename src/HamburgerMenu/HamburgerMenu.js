@@ -32,7 +32,7 @@ const HamburgerMenu = () => {
                 <nav>
                     <ul className="nav-buttons">
                         <li><Link className="link" to="/"><p>HOME</p></Link></li>
-                        <li><Link className="link" to="/portfolio"><p>PORTFOLIO</p></Link></li>
+                        <li><Link className="link" to="/aboutme"><p>ABOUT ME</p></Link></li>
                         <li><Link className="link" to="/skills"><p>SKILLS</p></Link></li>
                         <li><Link className="link" to="/contact"><p>CONTACT</p></Link></li>
                     </ul>
@@ -48,7 +48,7 @@ const HamburgerMenu = () => {
             </header>
             <div id="flyoutMenu" onClick={handleOnClick} className={visibility}>
                 <Link className="link" to="/"><p>HOME</p></Link>
-                <Link className="link" to="/portfolio"><p>PORTFOLIO</p></Link>
+                <Link className="link" to="/aboutme"><p>ABOUT ME</p></Link>
                 <Link className="link" to="/skills"><p>SKILLS</p></Link>
                 <Link className="link" to="/contact"><p>CONTACT</p></Link>
             </div>

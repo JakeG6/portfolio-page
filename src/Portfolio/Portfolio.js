@@ -83,9 +83,9 @@ class Portfolio extends Component {
 
         return (
             <div>
-                <div >
+                {/* <div >
                      <h2 className="page-logo" alt="portfolio logo">PORTFOLIO</h2>
-                </div>
+                </div> */}
                 <section id="portfolio">
                     {this.state.projects.map(project=> {
                         return (

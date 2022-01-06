@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
+import Portfolio from './Portfolio/Portfolio';
+
 import { motion, MotionConfig, useMotionValue, useTransform } from "framer-motion";
 import "./home.css";
 
-
 class Home extends Component {
-
-
 
   render() {
 
@@ -35,36 +34,8 @@ class Home extends Component {
             <a href="https://www.dropbox.com/s/9ycagfflx36bkhw/JGuss_WebDev_Resume_Revised.pdf?dl=0" target="_blank" className="resume-button"> You can find my resume here!</a>
           </p>
         </section>
-
-          <section id="portfolio">
-            <motion.a whileHover={{ scale: 1.05, boxShadow: '0px 5px 10px rgba(0,0,0,0.9)' }} className="home-item">
-              <a href="/portfolio" style={styles.a}>
-                  {/* <img className="portfolio-img" alt="project representation" src={project.image} /> */}
-              </a>
-              <a href="/portfolio" className="title-anchor">
-                  <h3 className="title">Portfolio</h3>
-              </a>       
-              <p className="page-description">All the things I've made</p>
-            </motion.a>    
-            <motion.a whileHover={{ scale: 1.05, boxShadow: '0px 5px 10px rgba(0,0,0,0.9)' }} className="home-item">
-              <a href="/portfolio" style={styles.a}>
-                  {/* <img className="portfolio-img" alt="project representation" src={project.image} /> */}
-              </a>
-              <a href="/portfolio" className="title-anchor">
-                  <h3 className="title">Skills</h3>
-              </a>       
-              <p className="page-description">All the things I've made</p>
-            </motion.a>    	
-            <motion.a whileHover={{ scale: 1.05, boxShadow: '0px 5px 10px rgba(0,0,0,0.9)' }} className="home-item">
-              <a href="/portfolio" style={styles.a}>
-                  {/* <img className="portfolio-img" alt="project representation" src={project.image} /> */}
-              </a>
-              <a href="/portfolio" className="title-anchor">
-                  <h3 className="title">Contact</h3>
-              </a>       
-              <p className="page-description">All the things I've made</p>
-            </motion.a>    		             
-          </section>		
+        < Portfolio />
+      
 
       </div>
     );
