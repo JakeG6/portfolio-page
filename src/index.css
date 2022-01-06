@@ -149,7 +149,7 @@ body {
 	background: linear-gradient( 180deg, white, #AFEEEE);
 }
 
- header, .profile, .item, .skills-container, .profile, #skills, .contact {
+ header, .profile, .item, .home-item, .skills-container, .profile, #skills, .contact {
 	background-color: #2c3840;
 }
 
