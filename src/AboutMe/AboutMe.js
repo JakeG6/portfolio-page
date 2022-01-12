@@ -19,7 +19,7 @@ class AboutMe extends Component {
                 {/* <div className="profile-top">
                 </div>
                 <img className="profile-picture" src="Images/rainforest1.jpg" alt="A forest"/> */}
-                <p className="about-me">I'm a web developer from Honolulu, Hawaii. In 2017 I decided to switch careers from Film and video production by attending DevMountain code bootcamp, followed by additional instruction at Helio Training, where I received a certificate of proficiency in Full Stack Web Development, with an eye for React and Node. Since then I've continued to grow and learn new skills, such as my current project which utilizes Python and Docker. Most recently I worked with the front-end team at getdocsnow.com, where I wrote the UI in Typescript while assisting on the project's MySQL database.</p>
+                <p className="about-me">I'm a web developer from Honolulu, Hawaii. In 2017 I decided to switch careers from film and video production by attending the code bootcamp at DevMountain, followed by additional instruction at Helio Training, where I've received a certificate of proficiency in Full Stack Web Development, with an eye for React and Node. Since then I've continued to grow and learn new skills; My current project will be utilizing Python, GraphQL and Docker. Most recently I worked with the front-end team at GetDocsNow.com, where I wrote the UI in Typescript while assisting on the project's MySQL database.</p>
             </section>
         </motion.div >
     );
