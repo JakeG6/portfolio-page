@@ -22,9 +22,9 @@
     "react-pose": "^4.0.8",
     "react-router": "^4.3.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "1.0.13",
+    "react-scripts": "5.0.1",
     "tslib": "^1.10.0",
-    "webpack": "^3.11.0"
+    "webpack": "^5.75.0"
   },
   "scripts": {
     "startdev": "react-scripts start",
