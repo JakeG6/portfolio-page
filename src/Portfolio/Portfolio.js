@@ -24,7 +24,7 @@ class Portfolio extends Component {
                     image:"Images/appli-logo.png",
                     title:"APPLi",
                     description: "This full-stack site lets users create, retrieve, update, and delete posts track their job application progess while looking for work. Built with Express, Passport.js, mySQL, and Material-UI.",
-                    link: "https://appli-front.herokuapp.com/",
+                    link: "https://appli-c52u.onrender.com",
                     code: "https://github.com/JakeG6/appli-front"
                 },
                 {
@@ -32,7 +32,7 @@ class Portfolio extends Component {
                     image:"Images/super.jpg",
                     title:"Excelsior",
                     description: "Search a custom MongoDB database for a variety of famous superheroes and villains. The site administrator can even upload and create new characters with a browser interface.",
-                    link: "https://excelsior-front.herokuapp.com/",
+                    link: "https://excelsior-axp0.onrender.com",
                     code: "https://github.com/JakeG6/excelsior-front"
                 },
                 {   
@@ -40,7 +40,7 @@ class Portfolio extends Component {
                     image:"Images/flat-calculator.png",
                     title:"Calculator",
                     description: "Use this basic calculator to perform addition, subtraction, multiplication, and division.",
-                    link: "https://aesthetic-calculator.herokuapp.com/",
+                    link: "https://react-calculator-eqf7.onrender.com",
                     code: "https://github.com/JakeG6/react-calculator"
                 },
                 {
@@ -48,17 +48,15 @@ class Portfolio extends Component {
                     image:"Images/quote-machine-flat.png",
                     title:"Quote Machine",
                     description: "Press the button and receive a random inspirational or memorable quote delivered fresh from an API!",
-                    link: "https://thequotemachine.herokuapp.com/",
+                    link: "https://quote-machine-sb5f.onrender.com",
                     code: "https://github.com/JakeG6/quote-machine"
-                },
-                
-                
+                },               
                 {
                     id: 5,
                     image:"Images/jacksorbetter.jpg",
                     title:"Jacks or Better",
                     description: "The popular casino game comes to React. Try your hand at a few rounds of this classic video poker variant: No actual betting required! Built as part of an application to a resort company.",
-                    link: "https://jacks-or-better.onrender.com/",
+                    link: "https://jacks-or-better.onrender.com",
                     code: "https://github.com/JakeG6/jacks-or-better"
                 }
             ],
